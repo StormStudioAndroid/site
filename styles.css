@@ -1,30 +1,59 @@
 @font-face {
     font-family: "ProximaNova";
+    font-style: Regular;
     src: url(fonts/Proxima_Nova_Regular.otf);
     
 }
 @font-face {
     font-family: "HelveticaNeueCyr";
+    font-weight: thin;
     src: url(fonts/HelveticaNeueCyrThin.ttf);
     
 }
 
 @font-face {
-    font-family: "MullerExtraBold";
+    font-family: "Muller";
     src: url(fonts/MullerExtraBold.otf);
     
+}
+@font-face {
+    font-family: "ProximaNovaRegular";
+        src: url(fonts/Proxima_Nova_Regular.otf);
+
 }
 @font-face {
     font-family: "GothamPro";
     src: url(fonts/Gotham_pro.ttf);
     
 }
+@font-face {
+    font-family: "HelveticaNeueCyr";
+    font-weight: bold;
+    src: url(fonts/HelveticaNeueCyrBold.otf);
+}
+@font-face {
+    font-family: "HelveticaNeueCyr";
+    font-style: "roman";
+    src: url(fonts/HelveticaNeueCyrRoman.otf);
+}
+@font-face {
+    font-family: "Muller";
+    font-style: Black;
+    src: url(fonts/MullerBlack.ttf);
+
+}
+
 .clearfix:after {
     content: "";
     display: table;
     clear: both;
+} 
+@font-face {
+    font-family: "ProximaNova";
+    font-style: Black;
+    src: url(fonts/Proxima_Nova_Black.otf);
+    
 }
-
 .big-main {
     background: url(images/header-background.png) no-repeat center center;
     -moz-background-size: 100%; 
@@ -48,9 +77,13 @@ header {
 
 .logo-container .describe  {
     margin-left: 90px;
+        line-height: 18px;
+
      max-width: 350px;
      text-align: left;
-       font-family: "ProximaNova";
+         font-family: "ProximaNovaRegular";
+
+
     font-size: 12px;
     color: #E9E9E9;
 
@@ -58,16 +91,23 @@ header {
 
 .right-panel {
          position: relative;
+    line-height: 18px;
 
 
+}
+.right-column {
+             position: relative;
 
+    float: left;
 }
 .plane-logo {
      width: auto;
     float: left;
 }
 .plane-describe {
-  font-family: "ProximaNova";
+    font-family: "ProximaNovaRegular";
+    line-height: 18px;
+
     font-size: 12px;
     margin-left: 46px;
         color: #E9E9E9;
@@ -91,7 +131,9 @@ header {
 
 .logo {
     text-transform: uppercase;
-       font-family: "ProximaNova";
+       font-family: "ProximaNovaRegular";
+
+
     font-size: 23px;
     color: white;
     float: left;
@@ -100,7 +142,7 @@ header {
 }
 
 .ready {
-    font-family: "ProximaNova";
+    font-family: "ProximaNovaRegular";
     font-size: 16px;
     text-transform: uppercase;
     color: white;
@@ -133,14 +175,20 @@ header {
     width: 100%;
     text-align: right;
         font-size: 16px;
-       font-family: "ProximaNova";
+          font-family: "ProximaNovaRegular";
+
+
 }
 
 
 .order-call {
     text-align:right;
     font-family: "HelveticaNeueCyr";
+        font-weight: thin;
+
     font-size: 14px;
+        font-weight: thin;
+
     float: right;
     border-bottom: 1px solid #0097fb;
     color: #BFBFBF;
@@ -148,21 +196,28 @@ header {
 }
 .under-title {
     max-width: 400px;
-          font-family: "ProximaNova";
+    line-height: 20px;
+    font-family: "ProximaNovaRegular";
          font-size: 15px;
     color: #BFBFBF;
     text-align: left;
 }
 .title-header {
+    line-height: 43px;
     margin-top: 37px;
     display: inline-block;
     max-width: 560px;
-    font-family: "MullerExtraBold";
+    font-family: "Muller";
     font-size: 35px;
+    font-weight: 900;
     text-align: left;
     text-transform: uppercase;
 /*        margin-bottom: 5%;*/
     
+}
+.advantage {
+    width: 100%;
+    height: 100%;
 }
 .button-video {
 
@@ -173,7 +228,9 @@ header {
 display:inline;
     align-items: center;
 /*    float: left;*/
-       font-family: "ProximaNova";
+          font-family: "ProximaNovaRegular";
+
+
     font-size: 13px;
    white-space: nowrap;
     color: white;
@@ -183,17 +240,25 @@ display:inline;
     -webkit-border-radius: 36px; 
     background-color: #0097FB;
 }
-.advantages{
-    padding-left: 25%;
-    padding-right: 25%;
+.advantages {
+    margin-top: -100px;
+   display: block;
+    margin-left: auto;
+        margin-right: auto;
+
 }
-.card-advantages {
-    position: relative;
-    top: 30%;
+.card {
+    max-width: 1140px;
+/*    position: relative;*/
+/*    top: 30%;*/
+        min-height: 210px;  
+padding-left: 100px;
+    padding right: 100px;
+    padding-top: 50px;
     background: #ffff;
-    -webkit-box-shadow: -5px 5px 5px -2px rgba(0,0,0,0.75);
--moz-box-shadow: -5px 5px 5px -2px rgba(0,0,0,0.75);
-box-shadow: -5px 5px 5px -2px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 4px 4px 26px 0px rgba(0,0,0,0.20);
+-moz-box-shadow: 4px 4px 26px 0px rgba(0,0,0,0.20);
+box-shadow: 4px 4px 26px 0px rgba(0,0,0,0.20);
 }
 .right-button {
 /*
@@ -227,36 +292,52 @@ vertical-align: top;
 
 }
 
-.advantages .number {
-        font-family: "MullerExtraBold";
+.advantages-title .title-1 {
+      font-family: "Muller";
+    font-style: Black;
+    margin-right: 13px;
     font-size: 70px;
-    color: white; /* Fallback: assume this color ON TOP of image */
-    background: url(images/font-background.png) center center no-repeat; -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
+    float: left;
+    
 }
-.advantages .title-word {
-      font-family: "ProximaNova";
+
+.text-advantage {
+    font-style: "roman";
+    font-family: "HelveticaNeueCyr";
+    font-size: 13px;
+        color: #636f7a;
+    text-align: left;
+    max-width: 180px;
+    line-height: 20px;
+    padding-top: 20px;
+}
+.advantages-title .title-2 {
+     font-family: "ProximaNova";
+    font-style: Black;
+    padding-top: 13px;
     font-size: 25px;
-    color: white; /* Fallback: assume this color ON TOP of image */
-    background: url(images/font-background.png) center center no-repeat; -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
 }
-.advantages .under-title {
-      font-family: "HelveticaNeueCyr";
+.advantages-title .title-3  {
+   font-family: "HelveticaNeueCyr";
+    font-weight: bold;
     font-size: 14px;
-    color: white; /* Fallback: assume this color ON TOP of image */
-    background: url(images/font-background.png) center center no-repeat; -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent
 }
+.advantages-title {
+    width: 100%;
+    background: url(images/font-advantages.png);
+  -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+ 
+
 button {
-
-
-  
     border-color: transparent;
    background: transparent; 
 }
 .rotate {
-     font-family: "ProximaNova";
+        font-family: "ProximaNovaRegular";
+
+
     font-size: 17px;
 /*    font-weight: bold;*/
     display: block;
@@ -271,12 +352,15 @@ button {
     margin-top: 18px;
 }
 .pre-time-text {
+    line-height: 22px;
     display: block;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
     max-width: 90px;
-    font-family: "ProximaNova";
+       font-family: "ProximaNovaRegular";
+
+
     font-size: 16px;
 /*    font-weight: bold;*/
     color: white;
