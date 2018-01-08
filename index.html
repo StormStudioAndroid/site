@@ -1,50 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-<meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <link rel="stylesheet" href="normalize.css">
 
-<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>  
+
+<body>
     <div class="big-main">
-<header>
-    <div class = "header-row clearfix">
-    <div class="col-33 logo-container">
-            <div class = "logo" >Лого</div>
-            <div class="describe">Профессиональное УЗИ оборудование<br> для частных и государственных клиник</div>
-        </div>
-        <div class="col-33 plane-container">
-            <div class="plane">
-            <div class="plane-logo">
-             <img src="images/plane-1.png" class="plane-logo">
-            </div>
-            <div class="plane-describe">Работаем по всей России
-        </div>
+        <header>
+            <div class="header-row clearfix">
+                <div class="col-33 logo-container">
+                    <!-- Тут скорее всего будет картинка -->
+                    <div class="logo">Лого</div>
+                    <!-- Может тут стоит юзать <p> ? -->
+                    <div class="describe">Профессиональное УЗИ оборудование<br> для частных и государственных клиник</div>
                 </div>
-        </div> 
-        <div class="col-33 contact">
-           
-        <div class="number colourized-text" ><span>8 (800)</span> 888 80 00</div>
-        <a class="order-call" >Заказать звонок</a>
-    </div>
-    </div>
+                <div class="col-33 plane-container">
+                    <div class="plane">
+                        <div class="plane-logo">
+                            <!-- Потерял alt -->
+                            <img src="images/plane-1.png" class="plane-logo">
+                        </div>
+                        <!-- Может тут стоит юзать <p> ? -->
+                        <div class="plane-describe">Работаем по всей России
+                        </div>
+                    </div>
+                </div>
+                <div class="col-33 contact">
+
+                    <div class="number colourized-text"><span>8 (800)</span> 888 80 00</div>
+                    <!-- Если это ссылка, то куда она ведет? -->
+                    <a class="order-call">Заказать звонок</a>
+                </div>
+            </div>
         </header>
         <section>
-    <div class = "header-row clearfix">
-        <div class="col-60">
-            <div class="ready">
-            Подготовим
-            </div>
-            <div class="colourized-text title-header">
-            <span>Грамотные </span>коммерческие и технические задания<br>
-            по 44ФЗ
-        </div>
-            <div class="under-title">
-            <p>Если у вас нет времени на изучение сайта, посмотрите короткое видео о "ЛабМедСервис"</p>
-            </div>
-            
-        <button class="button-video clearfix">
+            <div class="header-row clearfix">
+                <div class="col-60">
+                    <!-- Весь текст в <div>`a, так быть не должно -->
+                    <div class="ready">
+                        Подготовим
+                    </div>
+                    <div class="colourized-text title-header">
+                        <span>Грамотные </span>коммерческие и технические задания<br> по 44ФЗ
+                    </div>
+                    <div class="under-title">
+                        <p>Если у вас нет времени на изучение сайта, посмотрите короткое видео о "ЛабМедСервис"</p>
+                    </div>
+
+                    <button class="button-video clearfix">
 
             <span class="left-button">
                 Посмотреть видео
@@ -52,74 +59,86 @@
                 </span>
            
             </button>
-        </div>
-        
-        <div class="col-40">
-            <div class="time">
-        <div class="pre-time-text clearfix">
-            Для любых клиник за<div class="rotate">часов</div></div>
-                
-        <div class="time-text"><h1>10</h1></div>
                 </div>
-        </div>
-    </div>
-            </section>
+
+                <div class="col-40">
+                    <!--
+                        <div class="row_col number number--light">
+                            <div class="number_text">Для любыx <br>клиник за</div>
+                            <div class="number_number" data-text="часов">10</div>
+                        </div>
+                    -->
+                    <div class="time">
+                        <div class="pre-time-text clearfix">
+                            Для любых клиник за
+                            <div class="rotate">часов</div>
+                        </div>
+
+                        <div class="time-text">
+                            <h1>10</h1>
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+    </div>
 
     <div class="card advantages clearfix">
 
         <div class="col-33">
             <div class="left-panel">
                 <div class="advantages-title clearfix">
-                <div class="title-1">7</div>
-                    </div>
-            </div>
-                <div class="right-column">
-                <div class="advantages-title clearfix">
-                     <div class="title-2">лет</div>
-                <div class="title-3">на рынке</div>
-            </div>
-            <div class="text-advantage">Свыше 7 лет на рынке профессионального медицинского обслуживания</div>
-
-            </div>
-
+                    <div class="title-1">7</div>
                 </div>
- <div class="col-33">
-            <div class="left-panel">
+            </div>
+            <div class="right-column">
                 <div class="advantages-title clearfix">
-                <div class="title-1">2</div>
-                    </div>
-            </div>
-                <div class="right-column">
-                <div class="advantages-title clearfix">
-                     <div class="title-2">года</div>
-                <div class="title-3">гарантии</div>
-            </div>
-            <div class="text-advantage">Гарантия 2 года на все УЗИ и оборудование</div>
-
-            </div>
-
+                    <!-- На этом сайте, такой подход не уместен. Я про .title-1, .title-2, .title-3 -->
+                    <div class="title-2">лет</div>
+                    <div class="title-3">на рынке</div>
                 </div>
+                <div class="text-advantage">Свыше 7 лет на рынке профессионального медицинского обслуживания</div>
+
+            </div>
+
+        </div>
         <div class="col-33">
             <div class="left-panel">
                 <div class="advantages-title clearfix">
-                <div class="title-1">Б</div>
-                    </div>
-            </div>
-                <div class="right-column">
-                <div class="advantages-title clearfix">
-                     <div class="title-2"> ольшой</div>
-                <div class="title-3">выбор</div>
-            </div>
-            <div class="text-advantage">В наличии большой выбор УЗИ аппаратов. Лучшие бренды</div>
-
-            </div>
-
+                    <div class="title-1">2</div>
                 </div>
-                
             </div>
-           
-        
-    
+            <div class="right-column">
+                <div class="advantages-title clearfix">
+                    <div class="title-2">года</div>
+                    <div class="title-3">гарантии</div>
+                </div>
+                <div class="text-advantage">Гарантия 2 года на все УЗИ и оборудование</div>
+
+            </div>
+
+        </div>
+        <div class="col-33">
+            <div class="left-panel">
+                <div class="advantages-title clearfix">
+                    <div class="title-1">Б</div>
+                </div>
+            </div>
+            <div class="right-column">
+                <div class="advantages-title clearfix">
+                    <div class="title-2"> ольшой</div>
+                    <div class="title-3">выбор</div>
+                </div>
+                <div class="text-advantage">В наличии большой выбор УЗИ аппаратов. Лучшие бренды</div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
 </body>
+
 </html>
